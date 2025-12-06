@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<style>
+
+.imgbox img{
+    width: 1200px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.imgbox {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1500px;
+    height: 450px;
+    font-size:40px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.79);
+    backdrop-filter: blur(2px);
+}
+
+.text-over {
+   position: absolute;
+    top: 50%; /* وسط من الأعلى */ 
+    left: 50%; /* وسط من اليسار */ 
+    transform: translate(-50%, -50%); 
+    /* ضبط التوسيط الحقيقي */ 
+    color: white; font-size: 40px;
+}
+
+
+
+.text-ov{
+   position: absolute;
+    top: 60%; /* وسط من الأعلى */ 
+    left: 55%; /* وسط من اليسار */ 
+    transform: translate(-50%, -50%); 
+    /* ضبط التوسيط الحقيقي */ 
+    color: white; 
+    font-size: 25px;
+}
+
+/* ------- الأقسام التحتانية ------- */
+
+.section-title{
+    margin-top: 480px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-text{
+    text-align: center;
+    width: 70%;
+    margin: 10px auto 40px auto;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* كروت المزايا */
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.card{
+    width: 30%;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.card p{
+    padding: 10px 20px;
+    color: #555;
+    font-size: 15px;
+}
+
+/* سكشن Develop Your Website */
+.develop-title{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.develop-text{
+    text-align: center;
+    color: #444;
+    width: 70%;
+    margin: 10px auto 40px auto;
+}
+
+/* الفوتر */
+.footer{
+    background: #6e7579;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer div{
+    width: 35%;
+    line-height: 1.7;
+}
+
+.bottom-footer{
+    text-align: center;
+    color: #777;
+    margin: 20px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- الـ Hero اللي عملتيه -->
+<div class="imgbox"><img src="images/pc.png"></div>
+<div class="text-over">welcome To resposive web</div>
+
+<div class="text-ov" style="font-size:25px">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Sapiente reiciendis laborum, cumque eaque illo nemo ipsum</div>
+<br>
+<br>
+<!-- عنوان القسم -->
+<h2 class="section-title">Responsive Web Development</h2>
+<p class="section-text">
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Sapiente reiciendis laborum, cumque eaque illo nemo ipsum
+  inventore ratione consectetur ad sequi consequatur non 
+  quasi voluptates totam eveniet! Et, a consequatur.
+</p>
+
+
+<!-- 3 كروت الميزات -->
+<div class="features">
+
+    <div class="card">
+        <img src="images/lap1.jpg">
+        <h3>Why Responsive?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+
+    <div class="card">
+        <img src="images/lap2.jpg">
+        <h3>Same Experience Everywhere</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+
+    <div class="card">
+        <img src="images/lap3.jpg">
+        <h3>Improve Your Accessibility</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+
+</div>
+
+<!-- develop section -->
+<h2 class="develop-title">Develop Your Website</h2>
+<p class="develop-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit
+</p>
+
+
+<!-- footer -->
+<div class="footer">
+    <div>
+        <h3>Contact Us</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+        <p>info@responsive.com</p>
+    </div>
+
+    <div>
+        <h3>About Us</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+        </p>
+        <p>www.responsiveweb.com</p>
+    </div>
+</div>
+
+<div class="bottom-footer">
+    Lorem ipsum © 2024
+</div>
+
+</body>
+</html>
